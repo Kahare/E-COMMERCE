@@ -1,0 +1,13 @@
+{
+    "users":[
+        {
+            "id":"",
+            "username":"antony",
+            "email":"anton23@gmail.com",
+            "password":"werteue",
+            "confirm password":"werteue"
+            
+        }
+
+    ]
+}
