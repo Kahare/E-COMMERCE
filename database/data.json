@@ -1,13 +1,26 @@
 {
-    "users":[
-        {
-            "id":"",
-            "username":"antony",
-            "email":"anton23@gmail.com",
-            "password":"werteue",
-            "confirm password":"werteue"
-            
-        }
-
-    ]
+  "users": [
+    {
+      "id": "",
+      "username": "antony",
+      "email": "anton23@gmail.com",
+      "password": "werteue",
+      "confirm password": "werteue"
+    },
+    {
+      "id": "7f39",
+      "username": "kiti",
+      "email": "tony.kahare@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "5bf0",
+      "username": "mercy",
+      "email": "muturi@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "product": [
+    
+  ]
 }

@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Commerce Website</title>
     <link rel="stylesheet" href="./index.css">
-    <!-- Add Boxicons CDN for cart icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.0.7/css/boxicons.min.css">
-    <script src="./APP.JS" defer></script>
+    <script src="./index.js" defer></script>
 </head>
 <body>
     <header>
@@ -19,52 +18,33 @@
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
-                    <!-- Added cart icon -->
+                    <a href="signup.html">Sign up</a>
                     <li><a href="#" id="cart-icon"><i class='bx bxs-cart-add'></i> Cart <span id="cart-count">0</span></a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
     <main>
         <div class="container">
             <h2>Featured Products</h2>
-            <div class="product-grid">
-                <div class="product-item">
-                    <img src="https://imgs.search.brave.com/zyMGM9_afJ99G5WiYfVkR_nTFmjCPnCWLXfpm3E3A7k/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NDFCWjQ0cDhtNUwu/anBn">
-                    <h3>Product 1</h3>
-                    <p>$19.99</p>
-                    <button>Add to Cart</button>
-                </div>
-                <div class="product-item">
-                    <img src="https://imgs.search.brave.com/ucaAeuzrlhRinWNf_VNPUVMz6XDQj46mDTWmhD8TgfQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9lbi5h/ZmV3LXN0b3JlLmNv/bS9jZG4vc2hvcC9w/cm9kdWN0cy9haXIt/am9yZGFuLTEtbWlk/LXdoaXRlLWJsYWNr/LXdoaXRlLWJsYWNr/LWRxODQyNi0xMzIt/Zm9vdHdlYXJfMjBf/M0VfMjBzbmVha2Vy/LmpwZz92PTE3MTAx/NDI4NzEmd2lkdGg9/MTIwMA">
-                    <h3>Product 2</h3>
-                    <p>$29.99</p>
-                    <button>Add to Cart</button>
-                </div>
-                <div class="product-item">
-                    <img src=" https://imgs.search.brave.com/BvE9h1lmm8jAzb5eDBKpn9f_t-INLcslJQaJsa3pvY4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9rZS5q/dW1pYS5pcy91bnNh/ZmUvZml0LWluLzMw/MHgzMDAvZmlsdGVy/czpmaWxsKHdoaXRl/KS9wcm9kdWN0LzI0/LzE2Njg4MS8xLmpw/Zz84NzU0" alt=" ">
-                    <h3>Product 3</h3>
-                    <p>$39.99</p>
-                    <button>Add to Cart</button>
-                </div>
-                <div class="product-item">
-                    <img src="https://imgs.search.brave.com/o9152N16Nhf4lp_M3CSfLcHMys7K6kp-6LH3auX1J3w/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFwSjZqdlQ0cUwu/anBn" alt=" ">
-                    <h3>Product 4</h3>
-                    <p>$49.99</p>
-                    <button>Add to Cart</button>
-                </div>
+            <div class="product-grid" id="product-grid"></div>
+            <div>
+                <h2>Add New Product</h2>
+                <form id="add-product-form">
+                    <input type="text" id="product-name" placeholder="Product Name" required>
+                    <input type="number" id="product-price" placeholder="Product Price" step="0.01" required>
+                    <input type="url" id="product-image" placeholder="Product Image URL" required>
+                    <button type="submit">Add Product</button>
+                </form>
             </div>
         </div>
     </main>
-
     <footer>
         <div class="container">
             <p>&copy; 2024 E-Shop. All rights reserved.</p>
+            
         </div>
     </footer>
-
-    <!-- Cart modal -->
     <div id="cart-modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -73,6 +53,5 @@
             <p>Total: $<span id="cart-total">0.00</span></p>
         </div>
     </div>
-
 </body>
 </html>
